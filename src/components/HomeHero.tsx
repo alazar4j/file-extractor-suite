@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, MapPin, Sparkles } from "lucide-react";
 import hero from "@/assets/hero.jpg.asset.json";
 import { Button } from "@/components/ui/button";
 import { useLang } from "@/lib/i18n";
@@ -21,8 +21,12 @@ export function HomeHero() {
 
       <div className="mx-auto w-full max-w-[1100px]">
         <div className="max-w-3xl">
-          <p className="mb-6 inline-flex max-w-full items-center border border-parchment-2/35 bg-wood-dark/55 px-4 py-2 text-sm text-parchment-2 backdrop-blur-sm">
-            {t("hero.badge")}
+          <p
+            aria-label={t("hero.badge")}
+            className="mb-6 inline-flex max-w-full items-center gap-2 border border-parchment-2/35 bg-wood-dark/55 px-4 py-2 text-sm text-parchment-2 backdrop-blur-sm"
+          >
+            <Sparkles className="h-4 w-4 shrink-0 text-amber" aria-hidden="true" />
+            <span>{t("hero.badge").replace(/^✨\s*/, "")}</span>
           </p>
           <h1 className="display text-5xl leading-[1.02] text-parchment md:text-7xl lg:text-8xl">
             {t("hero.title")}
