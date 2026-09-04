@@ -5,7 +5,7 @@ export type Lang = "en" | "am";
 type Dict = Record<string, { en: string; am: string }>;
 
 export const strings: Dict = {
-  "brand.name": { en: "Gospel for Generation Church", am: "የትውልድ ወንጌል ቤተ ክርስቲያን" },
+  "brand.name": { en: "Gospel for Generation Church", am: "ወንጌል ለትውልድ ቤተ ክርስቲያን" },
   "nav.home": { en: "Home", am: "መነሻ" },
   "nav.about": { en: "About", am: "ስለ እኛ" },
   "nav.events": { en: "Events", am: "ዝግጅቶች" },
@@ -13,13 +13,17 @@ export const strings: Dict = {
   "nav.give": { en: "Give", am: "ስጦታ" },
   "nav.portal": { en: "Member Portal", am: "የአባላት ገጽ" },
 
-  "hero.title": { en: "Come as you are. Grow as you're meant to.", am: "እንዳለህ ና። ልትሆን እንደታሰበው አድግ።" },
-  "hero.lede": {
-    en: "Gospel for Generation Church is a family across every generation, gathering to worship, learn, and serve together in Addis Ababa.",
-    am: "የትውልድ ወንጌል ቤተ ክርስቲያን በአዲስ አበባ አብረው ለማምለክ፣ ለመማርና ለማገልገል የሚሰበሰብ የሁሉም ትውልድ ቤተሰብ ነው።",
+  "hero.badge": {
+    en: "✨ We are eagerly looking forward to seeing you",
+    am: "✨ ልናያችሁ ጉጉት አለን",
   },
-  "hero.cta1": { en: "Plan a Visit", am: "ጉብኝት ያቅዱ" },
-  "hero.cta2": { en: "Watch a Sermon", am: "ስብከት ይመልከቱ" },
+  "hero.title": { en: "Growing Together in Christ’s Love", am: "በክርስቶስ ፍቅር አብረን እናድጋለን" },
+  "hero.lede": {
+    en: '"For where two or three gather in my name, there am I with them." Join us each week as we share in fellowship, prayer, and the Word of God.',
+    am: '"ሁለት ወይም ሦስት በስሜ በሚሰበሰቡበት፥ በዚያ በመካከላቸው እሆናለሁ።" በኅብረት፣ በጸሎትና በእግዚአብሔር ቃል ለመካፈል በየሳምንቱ ይቀላቀሉን።',
+  },
+  "hero.cta1": { en: "Our Beliefs & History", am: "እምነታችንና ታሪካችን" },
+  "hero.cta2": { en: "Get Directions", am: "አቅጣጫ ያግኙ" },
 
   "home.welcome.h": { en: "You're welcome here", am: "እንኳን ደህና መጡ" },
   "home.welcome.p": {
@@ -50,6 +54,13 @@ export const strings: Dict = {
   "home.address.p": { en: "Bole Sub-city, Addis Ababa, Ethiopia", am: "ቦሌ ክፍለ ከተማ፣ አዲስ አበባ፣ ኢትዮጵያ" },
   "home.contact.h": { en: "Contact", am: "ያግኙን" },
   "home.contact.p": { en: "+251 11 000 0000 · hello@gospelforgeneration.org", am: "+251 11 000 0000 · hello@gospelforgeneration.org" },
+  "location.eyebrow": { en: "Come worship with us", am: "ከእኛ ጋር ያምልኩ" },
+  "location.title": { en: "There’s a place for you here", am: "እዚህ ለእርስዎ ቦታ አለ" },
+  "location.body": {
+    en: "We gather in Addis Ababa as one family across generations. Open the map for the best route to our church.",
+    am: "በአዲስ አበባ እንደ አንድ የትውልድ ቤተሰብ እንሰበሰባለን። ወደ ቤተ ክርስቲያናችን የሚወስደውን ቀላሉን መንገድ ለማየት ካርታውን ይክፈቱ።",
+  },
+  "location.mapLabel": { en: "Open church location", am: "የቤተ ክርስቲያኑን አድራሻ ይክፈቱ" },
   "home.verse.text": {
     en: '"For where two or three gather in my name, there am I with them."',
     am: '"ሁለት ወይም ሦስት በስሜ በሚሰበሰቡበት፥ በዚያ በመካከላቸው እሆናለሁ።"',
@@ -60,7 +71,7 @@ export const strings: Dict = {
   "about.who.h": { en: "Who we are", am: "እኛ ማን ነን" },
   "about.who.p1": {
     en: "Gospel for Generation Church is an evangelical congregation built on the belief that the gospel is for every generation — from the youngest child in our nursery to the oldest saint in our pews.",
-    am: "የትውልድ ወንጌል ቤተ ክርስቲያን ወንጌል ለሁሉም ትውልድ ነው በሚል እምነት ላይ የተመሠረተ የወንጌላውያን ጉባኤ ነው — በሕፃናት ክፍል ካለው ትንሹ ልጅ ጀምሮ እስከ ትልቁ አማኝ ድረስ።",
+    am: "ወንጌል ለትውልድ ቤተ ክርስቲያን ወንጌል ለሁሉም ትውልድ ነው በሚል እምነት ላይ የተመሠረተ የወንጌላውያን ጉባኤ ነው — በሕፃናት ክፍል ካለው ትንሹ ልጅ ጀምሮ እስከ ትልቁ አማኝ ድረስ።",
   },
   "about.who.p2": {
     en: "We're a Bible-teaching church: our sermons, small groups, and children's classes all return to the same source — the Word of God, taught plainly and applied honestly.",
@@ -157,7 +168,7 @@ export const strings: Dict = {
   "footer.connect.h": { en: "Connect", am: "ይገናኙን" },
   "footer.copyright": {
     en: "© 2026 Gospel for Generation Church. Built with care for the whole family of faith.",
-    am: "© 2026 የትውልድ ወንጌል ቤተ ክርስቲያን። ለመላው የእምነት ቤተሰብ በጥንቃቄ የተሠራ።",
+    am: "© 2026 ወንጌል ለትውልድ ቤተ ክርስቲያን። ለመላው የእምነት ቤተሰብ በጥንቃቄ የተሠራ።",
   },
   "common.loading": { en: "Loading…", am: "በመጫን ላይ…" },
 };
